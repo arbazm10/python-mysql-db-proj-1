@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, render_template, request
+
 import pymysql
 
 app = Flask(__name__)
@@ -14,7 +15,7 @@ def get_db_connection():
 
 @app.route('/health')
 def health():
-    return "Up & Running"
+    return "App Up & Running"
 
 @app.route('/create_table')
 def create_table():
