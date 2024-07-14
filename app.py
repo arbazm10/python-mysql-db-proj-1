@@ -15,7 +15,7 @@ def get_db_connection():
 
 @app.route('/health')
 def health():
-    return "App Up & Running"
+    return "my App Up & Running"
 
 @app.route('/create_table')
 def create_table():
